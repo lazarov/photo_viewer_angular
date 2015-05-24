@@ -11,16 +11,18 @@ angular.module('photos', ['ngAnimate'])
     ];
 
     $scope.currentIndex = 0;
-    $scope.setCurrentPhotoIndex = function (index) {
+
+    $scope.setCPIndex = function (index) {
       $scope.currentIndex = index;
     };
-    $scope.isCurrentPhotoIndex = function (index) {
+
+    $scope.isCPIndex = function (index) {
       return $scope.currentIndex === index;
     };
-    $scope.prevPhoto = function () {
+    $scope.nextPhoto = function () {
       $scope.currentIndex = ($scope.currentIndex < $scope.photos.length -1) ? ++$scope.currentIndex : 0;
     };
-    $scope.nextPhoto = function () {
+    $scope.prevPhoto = function () {
       $scope.currentIndex = ($scope.currentIndex > 0) ? --$scope.currentIndex : $scope.photos.length - 1;
     };
 });
