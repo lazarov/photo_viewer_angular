@@ -7,7 +7,8 @@ angular.module('photos', ['ngAnimate'])
       {image: 'photos/img03.jpg', description: 'Image 03'},
       {image: 'photos/img04.jpg', description: 'Image 04'},
       {image: 'photos/img05.jpg', description: 'Image 05'},
-      {image: 'photos/img06.jpg', description: 'Image 06'}
+      {image: 'photos/img06.jpg', description: 'Image 06'},
+      {image: 'photos/img07.jpg', description: 'Image 07'}
     ];
 
     $scope.currentIndex = 0;
