@@ -25,22 +25,22 @@ body {
     display: block;
     top: 50%;
     margin-top: -15px;
-    width: 75px;
-    height: 75px;
+    width: 90px;
+    height: 90px;
     outline: none;
     cursor: pointer;
 }
 
 .arrow.prev {
     opacity: 0.2;
-    left: 120px;
+    left: 10px;
     background-image: url(../assets/prev.png);
     transition: 0.2s linear all;
 }
 
 .arrow.next {
     opacity: 0.2;
-    right: 120px;
+    right: 10px;
     background-image: url(../assets/next.png);
     transition: 0.2s linear all;
 }

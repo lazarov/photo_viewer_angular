@@ -15,32 +15,26 @@
 
 <body ng-controller="MCtrl">
 
-  <div class="panel">
-    <a class="arrow prev" href="#" ng-click="prevPhoto()"></a>
-  </div>
-
     <div class="container viewer">
 
       <img ng-repeat="photo in photos" class="photo"
         ng-show="isCPIndex($index)" ng-src="{{photo.image}}">
 
+        <a class="arrow prev" href="#" ng-click="prevPhoto()"></a>
+        <a class="arrow next" href="#" ng-click="nextPhoto()"></a>
+
       <nav class="nav">
         <div class="wrapper">
-          <ul class="dots">
+        <!--  <ul class="dots">
             <li class="dot" ng-repeat="photo in photos">
               <a href="#" ng-class="{'active' :isCPIndex($index)}"
                 ng-click="setCPIndex($index);">{{photo.description}}
               </a>
             </li>
-          </ul>
+          </ul> -->
         </div>
       </nav>
     </div>
-
-    <div class="panel">
-      <a class="arrow next" href="#" ng-click="nextPhoto()"></a>
-    </div>
-
 
 </body>
 </html>
